@@ -35,7 +35,7 @@ class _LocationScreenState extends State<LocationScreen> {
         return;
       }
       print('pressed');
-      double temp = weatherData['main']['temp'];
+      var temp = weatherData['main']['temp'];
       temperature = (temp).toInt();
       weatherMessage = weatherModel.getMessage(temperature);
       var condition = weatherData['weather'][0]['id'];
